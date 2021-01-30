@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A website about Team CitiHacks, a group of FIU students planning to participate in a hackathon organized by Citibank">
-    <title>Team CitiHacks</title>
-    <link rel="stylesheet" href="https://citi-hack.com/assets/css/volunteer-opportunities.css">
-</head>
-
-<body>
+<html>
+  <head>
+    <title>Team CitiHacks - FoodLocator Project</title>
+    <meta charset="utf-8">
+    <meta name="description" content="A page dedicated to providing the information about the first project done by Team CitiHacks, FoodLocator app.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://citi-hack.com/assets/css/normalize.css">
+    <link rel="stylesheet" href="https://citi-hack.com/assets/css/food-locator.css">
+    <script src="https://htmlSshiv.googlecode.com/svn/trunk/htmlS.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+  </head>
+  <body>
     <!-- Navbar -->
     <div class="navbar" id="myNavbar">
         <nav class="container align"> 
@@ -19,101 +24,29 @@
             </a>
         </nav>   
     </div>
-
+      
     <!-- Head -->
     <div>
         <header>
             <div class="container about">
-                <h2>CitiHacks is committed to connecting food charities with the general public. We're also committed to connecting food charities with prospective volunteers. For anyone interested, we have provided a list of charities along to a link to their page.</h2>
+                <h2>FoodLocator app is the first web-based technology developed by Team CitiHacks in January 2021. The idea behind the app is to provide the users an easy access to basic needs and utilities, especially food, in the world ravaged by natural and anthropogenic disasters.</h2>
             </div>
         </header>
     </div>
-   
-    <!-- Our Team -->
-    <div class="container">
-        <span class="meet" id="meet-the-team"><h1>South Florida Charities to Volunteer for</h1></span>
-        <div class="flex wrap">
-            <div class="card">
-                <img src="https://citi-hack.com/images/jcsfl-logo.png" style='background-color:gray;' alt="JCS Kosher Food Bank logo" class="pic">
-                <p class="card-name"><a class="card-link" href="https://jcsfl.org/volunteer/">JCS Kosher Food Bank</a></p>
-                <p class="card-info">
-                    The JCS Kosher Food Bank is the only food bank in Miami-Dade County to which those who observe kosher (kashrut) dietary laws can turn. JCS’ Kosher Food Bank provides food to more than 380 families and nearly 100 Holocaust survivors.
-                </p>   
-            </div>
-            <div class="card">
-                <img src="https://citi-hack.com/images/service-logo.png" style='background-color:gray;' alt="Charity Services Centers logo" class="pic">
-                <p class="card-name"><a class="card-link" href="http://www.csc-centers.com">Charity Services Centers</a></p>
-                <p class="card-info">
-                    Charity Services Centers (CSC) is a law firm that is committed to solving community social challenges by bringing banks and nonprofits together. CSC believes in the value of nonprofits and we want to help your organization reach beyond ordinary approaches to access assistance to achieve greater impact.
-                </p>    
-            </div>
-            <div class="card">
-                <img src="https://citi-hack.com/images/miami-bridge.png" alt="Miami Bridge Youth and Family Services logo" class="pic">
-                <p class="card-name"><a class="card-link" href="https://miamibridge.org/volunteer-opportunities/">Miami Bridge Youth and Family Services</a></p>
-                <p class="card-info">
-                    Miami Bridge is utilized by the community as the axis point of all Miami-Dade County efforts in dealing with kids in crisis who are runaways, truant, homeless or having issues at home. In Miami-Dade County, we are the only emergency home serving kids ages 10 to 17. At the Bridge, we provide a full range of services including in-shelter counseling, field trips, in-home counseling and reunification with family.
-                </p>  
-            </div>
-            <div class="card">
-                <img src="https://citi-hack.com/images/salvation-army-logo.svg" alt="The Salvation Army logo" class="pic">
-                <p class="card-name"><a class="card-link" href="https://www.salvationarmyusa.org/usn/volunteer/">The Salvation Army</a></p>
-                <p class="card-info">
-                    Almost 3.3 million people of all ages volunteered their time, talents, and resources to assist The Salvation Army's work. Our volunteers are critical partners in helping us fulfill our promise to America of "Doing the Most Good."
-                </p>   
-            </div>
-            <div class="card">
-                <img src="https://citi-hack.com/images/goodwill-logo.jpg" alt="Goodwill" class="pic">
-                <p class="card-name"><a class="card-link" href="https://www.goodwill.org/blog/career-and-financial-advice/volunteering-at-goodwill-ways-to-get-involved/">Goodwill</a></p>
-                <p class="card-info">
-                    While Goodwill can help you connect to volunteer opportunities at a variety of organizations in your area, you may also choose to volunteer directly at one of our career centers, retail stores or other locations.
-                </p>     
-            </div>
-            <div class="card">
-                <img src="https://citi-hack.com/images/broward-food-pantry.png" alt="The Pantry of Broward logo" class="pic">
-                <p class="card-name"><a class="card-link" href="https://www.thepantryofbroward.org/volunteer-one-sheeter-2/">The Pantry of Broward</a></p>
-                <p class="card-info">
-                    The Pantry of Broward is a “one-stop shop” for seniors (ages 60+) struggling to live on low fixed incomes and grandparents raising their grandchildren. Each of our clients meets with our Director of Client Services regularly to review their individual needs and determine how The Pantry of Broward can best help them.
-                </p>     
-            </div>
-            <div class="card">
-                <img src="https://citi-hack.com/images/feeding-so-flo.png" alt="Feeding South Florida logo" class="pic">
-                <p class="card-name"><a class="card-link" href="https://www.feedingamerica.org/take-action/volunteer">Feeding America</a></p>
-                <p class="card-info">
-                    Our mission is to feed America’s hungry through a nationwide network of member food banks and engage our country in the fight to end hunger.
-                </p>    
-            </div>
-            <div class="card">
-                <img src="https://citi-hack.com/images/hallandale-food-pantry.jpg" alt="Love Harvest Community Food Outreach" class="pic">
-                <p class="card-name"><a class="card-link" href="https://www.foodpantries.org/li/austin_hepburn_senior_mini_center_33009">Hallandale Food Pantry</a></p>
-                <p class="card-info">
-                    The Hepburn Center operates a food pantry of canned items, staple foods and meats available to those in need. Residents seeking assistance  must see a Social Worker and be interviewed to ensure they meet eligibility requirements before receiving services. Food Pantry Hours: 8:00am - 5:00pm.
-                </p>     
-            </div>            
-        </div>
-    </div>
-
+        
+    <h1 class="text-center">Food Locator</h1>
+    <div id="map"></div>
+      
     <!-- Footer -->
     <div class="foot">
         <div class="container">
             <Footer>
-                <h1 class="contact" id="contact-us">Contact Us</h1>
-                <p>To add your charity to our list or any other questions, please contact us at:</p>
-                <p>Call us: (954) 699-7423</p>
+                <p>2020-2021 CitiHacks</p>
             </Footer>
         </div>
     </div>
-
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myNavbar");
-          if (x.className === "navbar") {
-            x.className += " responsive";
-          } else {
-            x.className = "navbar";
-          }
-        }
-    </script>
-
-</body>
-
+    
+    <script src="https://citi-hack.com/assets/js/map.js"></script>
+           
+  </body>
 </html>
