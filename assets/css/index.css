@@ -31,6 +31,11 @@ a {
     color: #fff;
 }
 
+.email {
+    color: blue;
+    border-bottom: 0.1em solid #FF0000;
+}
+
 .navbar {
     /* height: 4.375rem; */
     background-color: #3a68fa;
@@ -49,14 +54,14 @@ a {
     padding: 14px 16px;
 }
 
-a:hover {
-    background-color: red;
-}
-
 .navbar .icon {
     display: none;
     position: absolute;
     right: 40px;
+}
+
+a:hover {
+    background-color: red;
 }
 
 .logo {
@@ -152,7 +157,7 @@ header {
     align-items:flex-start;
 }
 
-i.fab {
+.fab, .fa {
     padding: 10px 2px;
     color: #333;
 }
